@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.result {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 208px;
+    height: 124px;
+    background-color: black;
+    margin: 16px;
+}
+
+.img {
+    text-align: center;
+    width: auto;
+    height: 100%;
+}

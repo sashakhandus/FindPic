@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FindPick3</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <form class="form js-form">
+        FindPick<br> 
+        <input type="text" name="city" class="input"></br>
+        <button class="submit">Поиск</button>
+    </form>
+
+    <div class="result js-result">
+    </div>
+
+    <template id="card-temp">
+        <div class="card">
+            
+            <img class="img" src="{{imgPreviewURL}}" alt=""> 
+        </div>
+    </template>
+
+    <button class="showMore">show more</button>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>  
+    <script src="js/index.js"></script>
+</body>
+</html>
