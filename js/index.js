@@ -32,7 +32,7 @@ const morePhotos = () => {
 
 const fetchPhoto = value => 
     fetch(
-       `https:pixabay.com/api/?key=10006985-c8819f0a36f4216b1e874a3ec&q=${value}&image_type=photo&page=${page}&per_page=12`
+       `https://pixabay.com/api/?key=10006985-c8819f0a36f4216b1e874a3ec&q=${value}&image_type=photo&page=${page}&per_page=12`
     )
     .then(res => res.json())
     .then(data => {
