@@ -8,8 +8,69 @@ body {
     text-align: center;
 }
 
+main {
+    max-width: 56.25rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 8.5rem;
+    position: relative;;
+}
+
+.favorites {
+    color: #673ab7;
+    font-family: Comfortaa;
+    font-weight: 700;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.favorites img {
+    margin-right: 0.5rem;
+}
+
+.logo {
+    margin-bottom: 3.125rem;
+}
+
+.input {
+    width: 28.5rem;
+    height: 1.5rem;
+    border: 2px solid #adafb2;
+    border-radius: 10px;
+    padding-left: 1.25rem;
+    color: #6d6e71;
+    font-family: Comfortaa;
+    font-weight: 400;
+}
+
+.input:active, .input:focus, button:focus {
+    outline: none;
+}
+
+.btn {
+    height: 1.5rem;
+    color: #fff;
+    background-color: #cddc39;
+    font-family: Comfortaa;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+    border-radius: 10px;
+}
+
+.submit {
+    margin-left: 0.875rem;
+}
+
+.showMore {
+    margin-top: 1.875rem;
+}
+
 .result {
-    margin-top: 50px;
+    margin-top: 1.875rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -18,9 +79,9 @@ body {
 
 .card {
     width: 208px;
-    height: 124px;
+    height: 120px;
     background-color: black;
-    margin: 16px;
+    margin: 6px;
 }
 
 .img {

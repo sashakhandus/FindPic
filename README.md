@@ -1,2 +1,0 @@
-# FindPic
-FindPick

@@ -69,3 +69,4 @@ const showPhotos = (newPhotos) => {
 
 form.addEventListener('submit', handleFormSumit);
 showMore.addEventListener('click', morePhotos);
+/*result.addEventListener('click', delCard);*/
