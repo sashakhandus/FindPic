@@ -4,39 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FindPick3</title>
+    <title>FindPick</title>
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
+
 </head>
 <body>
 
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+        <symbol id="icon-star-full" viewBox="0 0 32 32">
+            <title>star-full</title>
+            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+        </symbol>
+        </defs>
+    </svg>
+
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+        <symbol id="icon-star-empty" viewBox="0 0 32 32">
+            <title>star-empty</title>
+            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z"></path>
+        </symbol>
+        </defs>
+    </svg>
+            
+
     <main>
 
-        <div class="favorites">
-            <a>
-                <img src="img/icon.png" alt="favorites">Избранное
-            </a>
-        </div>
-
-        <div class="logo">
-            <a>
-                <img src="img/logo.png" alt="FindPic">
-            </a>
-        </div>
+        <div class="header">
+            <div class="favorites">
+                <a>
+                    <img src="img/icon.png" alt="favorites">Избранное
+                </a>
+            </div>
             
-        <form class="form js-form">
-            <input type="text" name="value" class="input">
-            <button class="submit btn">Поиск</button>
-        </form>
+            <div class="logo">
+                <a>
+                    <img src="img/logo.png" alt="FindPic">
+                </a>
+            </div>
+                        
+            <form class="form js-form">
+                <input type="text" name="value" class="input">
+                <button class="submit btn">Поиск</button>
+            </form>
+        </div>
             
         <div class="result js-result">
+            <div class="gallery" >
+            </div>
+
+            <div class ="modal" id="myModal">
+                <div class="modal-content"> 
+                    <div class="modal-img">
+                    </div>
+
+                        <div class="controls">
+                            <button class="prevew control">&#60;</button>
+                            <button class="next control">&#62;</button>
+                            <button class="favorite control icons__container">
+                                <svg class="icons__link painted">
+                                    <use xlink:href="#icon-star-full"></use>
+                                </svg>
+                            </button>
+                            <button class="close control">&times;</button>
+                        </div> 
+                </div>
+            </div>
+
         </div>
+
+        <template id="modal-temp">
+            <img class="imgBig" src="{{imgSrc}}" width="500px" height="auto">
+        </template>
             
         <template id="card-temp">
-            <div class="card">
-                        
-                <img class="img" src="{{imgPreviewURL}}" alt=""> 
-            </div>
+            <a class="card" href="{{imgLargeURL}}" rel="group"  data-fancybox="example_group">           
+                <img class="img" src="{{imgPreviewURL}}"alt=""> 
+            </a>
         </template>
             
         <button class="showMore btn">Показать еще</button>

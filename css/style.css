@@ -9,11 +9,17 @@ body {
 }
 
 main {
-    max-width: 56.25rem;
+    /*max-width: 56.25rem;*/
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 8.5rem;
-    position: relative;;
+    position: relative;
+}
+
+.header {
+    max-width: 56.25rem;
+    margin: 0 auto;
+    position: relative;
 }
 
 .favorites {
@@ -24,6 +30,10 @@ main {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.favorites:hover {
+    cursor: pointer;
 }
 
 .favorites img {
@@ -70,18 +80,27 @@ main {
 }
 
 .result {
+    position: relative;
+    margin-top: 1.875rem;
+}
+
+.gallery {
     margin-top: 1.875rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 56.25rem;
+    margin: 0 auto;
+    position: relative;
 }
 
 .card {
     width: 208px;
     height: 120px;
     background-color: black;
-    margin: 6px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
 }
 
 .img {
@@ -89,3 +108,69 @@ main {
     width: auto;
     height: 100%;
 }
+
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    background-color: #adafb2;
+    margin: 0 auto;
+    padding: 0px;
+    padding-top: 3.375rem;
+    max-width: 56.25rem;
+    background-color: transparent;
+}
+
+.controls {
+    width: 7.125rem;
+    background-color: #673ab7;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.controls button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.control {
+    color: #fff;
+    font-size: 26px;
+    background: transparent;
+}
+
+.icons__container {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.icons__link {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
+    stroke: #fff;
+    stroke-width: 1px;
+}
+
+.icons__container:hover .icons__link {
+    fill: #cddc39;
+}
+
+
+
